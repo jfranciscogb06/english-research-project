@@ -542,13 +542,11 @@ function Survey() {
               <strong style={{ color: HEADING }}>{stats.btnAvg}/10</strong> for physical buttons.{' '}
               {stats.prefButtons} out of 60 preferred physical controls for everyday tasks.
             </Body>
-            <div className="p-4 rounded-xl"
-              style={{ background: BG, border: `1px solid ${BORDER}` }}>
-              <p className="text-sm leading-relaxed italic" style={{ color: TEXT }}>
-                "People already sense that touchscreens are more distracting. But the
-                task data shows the actual performance gap is even wider than they expect."
-              </p>
-            </div>
+            <Body>
+              The survey results lined up with what the task test showed. People already
+              rated touchscreens as significantly more distracting, and the performance
+              data confirmed the gap is real, not just a perception.
+            </Body>
           </div>
 
           <div className="space-y-4">
@@ -720,13 +718,13 @@ function Recommendation() {
           ))}
         </div>
 
-        <div className="max-w-xl px-6 py-6 rounded-xl"
-          style={{ background: BG, border: `1px solid ${BORDER}` }}>
-          <p className="text-base md:text-lg font-semibold leading-snug" style={{ color: HEADING }}>
-            Good design is not just what looks modern. It is what lets people do
-            the task in front of them safely.
-          </p>
-        </div>
+        <Body className="max-w-xl">
+          The data is clear: basic driving controls work better when they are
+          physical. That is not a matter of preference or nostalgia. It shows up
+          in the times, the error counts, and the workload ratings. Car designers
+          should use that evidence when deciding what belongs on a screen and
+          what belongs on the dash.
+        </Body>
       </div>
     </section>
   )
