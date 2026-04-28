@@ -198,35 +198,6 @@ function Hero() {
           </span>
         </div>
 
-        {/* Car photo cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mb-16">
-          {[
-            { year: '2016', label: 'Physical-primary',  color: PHYS,  src: bmw2016 },
-            { year: '2026', label: 'Touchscreen-heavy', color: TOUCH, src: bmw2026 },
-          ].map(c => (
-            <div key={c.year} className="rounded-xl overflow-hidden"
-              style={{ border: `1px solid ${BORDER}`, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
-              <div className="relative">
-                <img src={c.src} alt={`${c.year} BMW M3 interior`}
-                  className="w-full object-cover"
-                  style={{ height: 160 }} />
-                <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%)' }} />
-                <div className="absolute bottom-0 left-0 px-4 pb-3">
-                  <span className="text-xl font-black text-white">{c.year}</span>
-                  <span className="text-xs ml-2 text-white/80">BMW M3</span>
-                </div>
-              </div>
-              <div className="px-4 py-3" style={{ background: BG_ALT }}>
-                <span className="text-xs font-medium px-2 py-0.5 rounded-full"
-                  style={{ color: c.color, background: `${c.color}14`, border: `1px solid ${c.color}35` }}>
-                  {c.label}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-
         <div className="flex flex-col items-start gap-1.5" style={{ color: MUTED }}>
           <span className="text-xs tracking-widest uppercase">Scroll</span>
           <ChevronDown size={16} className="animate-bounce" style={{ color: MUTED }} />
