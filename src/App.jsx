@@ -185,8 +185,8 @@ function Hero() {
         <p className="text-sm md:text-base max-w-xl mb-10 leading-relaxed" style={{ color: SUBTEXT }}>
           Cars are replacing physical buttons and knobs with touchscreen interfaces
           for everyday tasks like adjusting temperature, fan speed, volume, and defrost.
-          This project compares how drivers think about that tradeoff versus how they
-          actually perform when tested in both setups.
+          This project compares how drivers think about that tradeoff vs. how they
+          actually perform when tested in both environments.
         </p>
 
         {/* Finding badge */}
